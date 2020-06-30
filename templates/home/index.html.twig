@@ -14,16 +14,22 @@
 							<h5 class="card-title">{{item.title}}
 								-
 								{{item.year}}</h5>
+							<br>
 							<h5 class="card-title">{{item.duration}}
 							</h5>
+							<br>
 							<h5 class="card-title">{{item.director}}
 							</h5>
+							<br>
 							<h5 class="card-title">{{item.actors}}
 							</h5>
+							<br>
 							<h5 class="card-title">{{item.country}}
 							</h5>
+							<br>
 							<h5 class="card-title">{{item.type}}
 							</h5>
+							<br>
 							<p class="card-text">{{item.review | u.truncate(64, '...')}}</p>
 							<a href="{{ path('content_from_id', {'id':item.id}) }}" class="btn btn-primary">
 								Lire la suite
