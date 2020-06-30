@@ -21,7 +21,7 @@ class AppFixtures extends Fixture
             $onePost->setCountry($faker->text(255));
             $onePost->setType($faker->text(255));
             $onePost->setReview($faker->text(255));
-            $onePost->setImage($faker->text(255));
+            $onePost->setImage($faker->imageUrl());
             $onePost->setYear($faker->text(255));
 
             $manager->persist($onePost);
