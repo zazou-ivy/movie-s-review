@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{post.title}}
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="card mt-3">
+					<h5 class="card-header">{{post.title}}</h5>
+					<div class="card-body">
+						<h5 class="card-title">{{post.duration}}
+							-
+							{{post.type}}</h5>
+						<p class="card-text">{{post.review }}</p>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+{% endblock %}
