@@ -16,13 +16,13 @@ class AppFixtures extends Fixture
             $onePost = new Post();
             $onePost->setTitle($faker->word());
             $onePost->setDuration($faker->word());
-            $onePost->setDirector($faker->text(255));
-            $onePost->setActors($faker->text(255));
-            $onePost->setCountry($faker->text(255));
-            $onePost->setType($faker->text(255));
+            $onePost->setDirector($faker->text(35));
+            $onePost->setActors($faker->text(35));
+            $onePost->setCountry($faker->text(35));
+            $onePost->setType($faker->text(35));
             $onePost->setReview($faker->text(255));
-            $onePost->setImage($faker->imageUrl());
-            $onePost->setYear($faker->text(255));
+            $onePost->setImage($faker->imageUrl(300, 300));
+            $onePost->setYear($faker->dateTimeBetween()->format('Y'));
 
             $manager->persist($onePost);
         }
